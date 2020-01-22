@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+		<!-- com.hqq.dao -->
+   		<bean id="ArticleDAOId" class="com.hqq.dao.ArticleDAO"></bean>
+   		<bean id="CatalogDAOId" class="com.hqq.dao.CatalogDAO"></bean>
+   		<bean id="IndexDAOId" class="com.hqq.dao.IndexDAO"></bean>
+   		<bean id="ManagerDAOId" class="com.hqq.dao.ManagerDAO"></bean>
+   		
+   		<!-- com.hqq.demo -->
+   		<bean id="ArticleId" class="com.hqq.demo.Article"></bean>
+   		<bean id="CatalogId" class="com.hqq.demo.Catalog"></bean>
+   		<bean id="ManagerId" class="com.hqq.demo.Manager"></bean>
+   		<bean id="PageBeanId" class="com.hqq.demo.PageBean"></bean>
+   		
+   		<!-- com.hqq.utils -->
+   		<bean id="JdbcUtilsId" class="com.hqq.utils.JdbcUtils"></bean>
+   		<bean id="changetypeId" class="com.hqq.utils.changetype"></bean>
+
+</beans>

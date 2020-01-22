@@ -1,0 +1,50 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.box{
+	width: 100%;
+	margin: 50px auto;
+	overflow: hidden
+}
+.box .ar_title{
+	margin:25px auto;
+	width: 100%;
+	
+}
+.box .ar_content{
+	text-indent: 2em;
+	margin:25px auto;
+	width: 98%;
+	
+	font-size:16px;
+}
+.box .nat{
+	margin:25px auto;
+	width: 90%;
+}
+.box .nat span{
+	margin-left: 5px;
+	margin-right: 20px;
+	font-size: 13px;
+	display: inline-block;
+}
+.box .nat img{
+	display: inline-block;
+}
+h1{
+	font-size:32;
+	font-weight: 900;
+}
+h2{
+	font-size:24;
+	font-weight: 800;
+}
+h3{
+	font-size:18.72;
+	font-weight: 700;
+}
+h4{
+	font-size:16;
+	font-weight: 600;
+}

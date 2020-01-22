@@ -1,0 +1,38 @@
+			/*=========== 模糊查询更改，以及问题解决 ===========*/
+ 
+
+1.新建servlet：type=search
+
+2.新建DAO：search
+3.新建模糊查询：countsearch
+
+4.添加request.setAttribute("..name",..name); //和input输入框的名字保持一致
+5.
+	String bool = "0";
+	添加request.setAttribute("bool",bool);
+
+
+注意：
+	其中会出现 
+	例如：CatalogServlet？type=...&ca_name=${.... } 在servlet中获取不到中文，会形成中文乱码的问题
+	本人使用的Tomcat在以下配置中没有“URIEncoding="UTF-8”需要自行加上
+
+	通过Tomcat配置文件，设置URL编码集（URIEncoding）设置编码。修改Tomcat/conf 目录下 server.xml
+		
+		<Connector port="8080" protocol="HTTP/1.1"   
+   		connectionTimeout="20000"   
+    		redirectPort="8444"   
+    		URIEncoding="UTF-8" />
+    		
+    		
+    		/*=========== 前台获取数据 ===========*/
+
+<script type="test/javascript">
+	function jump(){
+		window.location.href="IndexServlet";
+	}
+</script>   		
+<body onload="jump()"> 
+
+</body>
+ 
