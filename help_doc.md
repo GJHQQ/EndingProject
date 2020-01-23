@@ -12,3 +12,5 @@
          全局的模糊查询
          文章的富文本编辑器
          用户注销
+ps：项目的数据放在根目录下的SQL_File文件夹下有四个数据库image.sql是空数据库
+如要使用登入页面在加载了tomcat的locahost:8080/EndingPorject/background/login.jsp
